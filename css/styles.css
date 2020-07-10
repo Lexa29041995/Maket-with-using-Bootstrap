@@ -1,0 +1,1269 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/proxima-nova-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body {
+    padding: 0;
+    background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    color: #f6f9fa;
+    margin: 0;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    color: #f6f9fa;
+    margin: 0;
+    margin: 0 auto;
+    font-family: "Proxima Nova", serif;
+    font-size: 13px;
+}
+
+h2 {
+    font-size: 39px;
+    text-transform: uppercase;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .container {
+    padding: 0;
+}
+
+.main_container {
+    max-width: 1920px;
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+.header img {
+    padding: 50px 0 150px;
+}
+
+.logo_text {
+    padding-top: 60px;
+}
+
+.hr_line {
+    width: 20px;
+    height: 2px;
+    background-color: #f6f9fa;
+    margin-bottom: 65px;
+}
+
+.offer {
+    margin-bottom: 50px;
+}
+
+.offer_discribe {
+    margin-bottom: 40px;
+}
+
+.project_button {
+    color: #f6f9fa;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #f6f9fa;
+    padding: 25px 40px;
+}
+
+.project_button:hover {
+    color: #76767b;
+    background-color: #f6f9fa;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #f6f9fa;
+    padding: 25px 40px;
+}
+
+.button {
+    margin-bottom: 310px;
+}
+
+.footer {
+    background-color: #28282e;
+}
+
+.footer p {
+    padding: 70px 0;
+    color: #76767b;
+    font-size: 13px;
+}
+
+.row>div {
+    padding: 0;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.let_talk {
+    padding: 55px 0;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #ef4035;
+    border: #ef4035;
+    color: #f6f9fa;
+}
+
+.let_talk:hover {
+    padding: 55px 0;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #ef4000;
+    border: #ef4000;
+    color: #f6f9fa;
+}
+
+.our_works {
+    background-color: #ffffff;
+}
+
+.our_works h2 {
+    font-size: 53px;
+    color: #333333;
+}
+
+.our_works p {
+    color: #a5a5a5;
+    padding-top: 120px;
+    font-size: 18px;
+}
+
+.our_works .hr_line {
+    background-color: #333333;
+    margin-bottom: 115px;
+    height: 3px;
+}
+
+.our_works h2 {
+    padding-top: 120px;
+    margin-bottom: 25px;
+}
+
+.project_title_here {
+    padding-top: 380px;
+    padding-bottom: 480px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    width: 3px;
+}
+
+.tab,
+.tab_title {
+    display: inline-block;
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab_titles {
+    background: #ccc;
+    padding: 15px 3px;
+    width: 3px;
+    height: 25px;
+}
+
+.tabs .label_1,
+.tabs .label_2,
+.tabs .label_3 {
+    position: absolute;
+    right: 0;
+}
+
+.tabs .label_2 {
+    top: 40px;
+}
+
+.tabs .label_3 {
+    top: 80px;
+}
+
+.tab_titles:hover {
+    cursor: pointer;
+    background: #ccc;
+    padding: 15px 3px;
+    width: 3px;
+    height: 25px;
+}
+
+.tab_content {
+    position: absolute;
+    top: -145px;
+    width: calc(100% - 20px);
+    display: none;
+    color: #ffffff;
+}
+
+.tab :checked+.tab_titles {
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.tab :checked~.tab_content {
+    display: block;
+}
+
+.project_title_here {
+    background-color: #28282e;
+}
+
+.project_title_here h2 {
+    font-size: 53px;
+    background-color: #28282e;
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+
+.project_title_here p {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.project_title_here .tab_content .tab_margin {
+    margin-right: 50px;
+}
+
+.project_title_here .tab_content .indicators_move {
+    bottom: -100px;
+}
+
+.project_title_here h2 {
+    margin-bottom: 30px;
+}
+
+.project_title_here .hr_line {
+    margin-bottom: 55px;
+}
+
+.project_title_here .tabs .img_change img {
+    margin: 0 auto;
+    height: 380px;
+    max-width: 520px;
+}
+
+.project_title_here .tabs .changed_width img {
+    max-width: 200px;
+}
+
+.project_title_here .bottom_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 25px 30px;
+}
+
+.project_title_here .bottom_link:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #76767b;
+    color: #76767b;
+    padding: 25px 30px;
+}
+
+.project_title_here .img_1 {
+    position: absolute;
+    top: -5px;
+    left: 115px;
+}
+
+.project_title_here .img_2 {
+    position: absolute;
+    top: -5px;
+    left: 165px;
+}
+
+.project_title_here .img_3 {
+    position: absolute;
+    top: -5px;
+    left: 220px;
+}
+
+.project_title_here .li_1 {
+    width: 0;
+}
+
+.read_our_minds {
+    background-color: #ffffff;
+}
+.read_our_minds table {
+    vertical-align: center;
+    width: 100%;
+
+}
+
+.read_our_minds td {
+    vertical-align: top;
+    border-bottom: 1px solid #76767b;
+}
+
+.read_our_minds .first_row {
+    width: 60%;
+}
+
+.read_our_minds .second_row {
+    width: 15%;
+}
+
+.read_our_minds table p {
+    color: #a8a8a8;
+    padding: 0;
+    margin-bottom: 65px;
+}
+.read_our_minds h2 {
+    padding-top: 120px;
+    font-size: 53px;
+    margin-bottom: 35px;
+    color: #333333;
+}
+
+.read_our_minds  h4 {
+    color: #28282e;
+    padding: 35px 0 35px;
+    text-transform: uppercase;
+}
+.read_our_minds .hr_line {
+    background-color: #333333;
+    margin-bottom: 115px;
+    height: 3px;
+}
+.read_our_minds p {
+    color: #a5a5a5;
+    padding-top: 120px;
+    font-size: 18px;
+}
+
+
+.read_our_minds .colspan_td {
+    background-image: url(../img/table_fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.table_inside h4 {
+    color: #f6f6f6;
+}
+
+.table_inside p {
+    color: #f6f6f6;
+}
+
+.read_our_minds .button_changed {
+    margin: 0 auto;
+    color: red;
+    padding: 0;
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 0;
+    border: none;
+}
+
+.read_our_minds .button_changed:hover {
+    margin: 0 auto;
+    color: red;
+    background-color: white;
+    padding: 0;
+    text-decoration: none;
+    padding: 19px 0;
+    border: none;
+    border: 1px solid red;
+}
+
+.read_our_minds .card_class {
+    border: hidden;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.read_our_minds .card_border {
+    border: none;
+}
+
+.read_our_minds .card_border .body_body {
+    padding: 0;
+}
+
+.read_our_minds .p_with_padding {
+    display: flex;
+    padding-top: 0;
+}
+
+.read_our_minds .table_title {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #76767b;
+}
+
+.slow_life {
+    display: flex;
+    justify-content: center;
+    background-color: #28282e;
+}
+
+.slow_life h3 {
+    font-size: 39px;
+    padding-top: 150px;
+    margin-bottom: 65px;
+    color: #f6f6f6;
+}
+
+.slow_life p {
+    font-size: 18px;
+    margin-bottom: 55px;
+    color: #76767b;
+}
+
+.slow_life .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slow_life .list {
+    margin-bottom: 230px;
+}
+
+.slow_life .list .carusel_radosti .changed_li {
+    background-clip: unset;
+    width: 1px;
+    height: 1px;
+    border-top: none;
+    border: 4px solid transparent;
+    border-radius: 5px;
+}
+
+.slow_life .list .carusel_radosti .changed_ol {
+    bottom: -82px;
+}
+.slow_life .list .carusel_radosti {
+    position: unset;
+}
+.our_services {
+    padding-top: 380px;
+    padding-bottom: 480px;
+}
+.our_services_menu {
+    display: none;
+}
+
+.our_services .tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.our_services .tab {
+    width: 3px;
+}
+
+.our_services .tab,
+.our_services .tab_title_1 {
+    display: inline-block;
+}
+
+.our_services .tab .tab_title_1 p {
+    margin: 0;
+    padding: 0;
+    color: #28282e;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 50px;
+    left: 55px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.our_services .tab .label_7_1 p {
+    margin: 0;
+    padding: 0;
+    color: #28282e;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 70px;
+    left: 85px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.our_services .tab input[type="radio"] {
+    display: none;
+}
+
+.our_services .tab_title_1 {
+    background: #ffffff;
+    padding: 15px 3px;
+    width: 3px;
+    height: 25px;
+}
+
+.our_services .tabs .label_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 150px;
+    right: 600px;
+    transform: rotate(45deg);
+}
+
+
+.our_services .tabs .label_2_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0px;
+    right: 450px;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_3_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: 300px;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_4_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_5_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_6_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_7_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    transform: rotate(45deg);
+}
+
+.our_services .tabs .label_8_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: -300px;
+    transform: rotate(45deg);
+}
+
+.our_services .tab_content {
+    position: absolute;
+    top: -145px;
+    width: calc(100% - 20px);
+    display: none;
+    color: #ffffff;
+}
+
+.our_services input:checked +.tab_title_1 {
+    position: absolute;
+    background: #28282e;
+    color: #28282e;
+}
+
+.our_services input:checked+ .tab_title_1 p {
+    color: #f6f9fa;
+}
+
+
+.our_services {
+    background-color: #f6f6f6;
+}
+
+.our_services .project_title {
+    font-size: 53px;
+    background-color: #f6f6f6;
+    color: #333333;
+    text-transform: uppercase;
+
+}
+.our_services .project_title_1 {
+    font-size: 18px;
+    background-color: #f6f6f6;
+    color: #a5a5a5;
+    text-transform: capitalize;
+
+}
+
+.our_services p {
+    margin-bottom: 100px;
+}
+
+.our_services .tab_content .tab_margin_1 {
+    margin-right: 120px;
+}
+
+.our_services .tab_content .indicators_move {
+    bottom: -100px;
+}
+
+.our_services h2 {
+    margin-bottom: 30px;
+}
+
+.our_services img {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 65px;
+    left: 70px;
+}
+.our_services .dropdown_list {
+    display: none;
+}
+.our_services .hr_line {
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 55px;
+}
+
+.our_services .li_1 {
+    width: 0;
+}
+
+.who_are_we {
+    padding-top: 380px;
+    padding-bottom: 480px;
+}
+
+.who_are_we .tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.who_are_we .tab {
+    width: 3px;
+}
+.who_are_we .who_are_we_menu {
+    display: none;
+}
+.who_are_we .who_are_we_menu h2{
+    color: #28282e;
+    background-color: #f6f6f6;
+}
+
+.who_are_we .tab,
+.who_are_we .tab_title {
+    display: inline-block;
+}
+
+.who_are_we .tab input[type="radio"] {
+    display: none;
+}
+
+.who_are_we .tab_title {
+    background: #ffffff;
+    padding: 15px 3px;
+    width: 3px;
+    height: 25px;
+}
+
+.who_are_we .tabs .label_1_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 150px;
+    right: 600px;
+    transform: rotate(45deg);
+}
+
+.who_are_we label::after {
+    content: '';
+    position: absolute;
+    width: 0;
+	height: 0;
+	top: 72px;
+    right: -93px;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 140px solid red;
+    transform: rotate(-45deg);
+    opacity: 0.7;
+    display: none;
+}
+.who_are_we label::before {
+    content: 'CHARLI WAITER  UI designer';
+    color: #ffffff;
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: 3;
+    top: 95px;
+    text-align: center;
+    left: 60px;
+    display: none;
+    opacity: 0.7;
+}
+.who_are_we .tabs .label_2_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0px;
+    right: 450px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_3_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: 300px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_4_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_5_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_6_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_7_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tabs .label_8_1_1 {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -150px;
+    right: -300px;
+    transform: rotate(45deg);
+}
+
+.who_are_we .tab_content {
+    position: absolute;
+    top: -145px;
+    width: calc(100% - 20px);
+    display: none;
+    color: #ffffff;
+}
+
+.who_are_we input:checked + label::after{
+    display: block;
+}
+.who_are_we input:checked + label::before{
+    display: block;
+}
+
+.who_are_we {
+    background-color: #f6f6f6;
+}
+.who_are_we .project_title {
+    font-size: 53px;
+    background-color: #f6f6f6;
+    color: #333333;
+    text-transform: uppercase;
+
+}
+.who_are_we .project_title_1 {
+    font-size: 18px;
+    background-color: #f6f6f6;
+    color: #a5a5a5;
+    text-transform: capitalize;
+
+}
+
+.who_are_we p {
+    margin-bottom: 100px;
+}
+
+.who_are_we .tab_content .tab_margin_1 {
+    margin-right: 120px;
+}
+
+.who_are_we .tab_content .indicators_move {
+    bottom: -100px;
+}
+
+.who_are_we h2 {
+    margin-bottom: 30px;
+}
+
+.who_are_we .hr_line {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 55px;
+}
+.who_are_we a{
+    color: red;
+    text-decoration: none;
+}
+.who_are_we a:hover {
+    text-decoration: underline;
+}
+.who_are_we .hr_line>p {
+    color: red;
+}
+
+.who_are_we .li_1 {
+    width: 0;
+}
+
+.who_are_we img {
+    transform: rotate(-45deg);
+}
+
+.who_are_we img {
+    position: absolute;
+    top: -45px;
+    left: -45px;
+}
+@media (max-width:1800px) {
+    .who_are_we .tabs {
+        display: none;
+    }
+    .our_services .tabs {
+        display: none;
+    }
+    .our_services_menu {
+        display: block;
+    }
+    .who_are_we .who_are_we_menu {
+        display: block;
+    }
+    .our_services_menu h2 {
+        color: #28282e;
+        background-color: #f6f6f6;
+    }
+
+    .our_services {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .who_are_we {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+   
+    .our_services .dropdown_list {
+        display: block;
+    }
+    .our_services .btn_btn {
+        width: 300px;
+    }
+    .our_services .btn_menu {
+        width: 650px;
+    }
+    .our_services .menu-text {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .who_are_we .dropdown_list {
+        display: block;
+    }
+    .who_are_we .btn_btn_btn {
+        width: 300px;
+    }
+    .who_are_we .btn_menu_btn {
+        width: 650px;
+    }
+    .who_are_we .menu-text {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width:1024px) {
+    .header h1,
+    .our_services .project_title,
+    .our_works h2,
+    .project_title_here h2,
+    .read_our_minds h2,
+    .slow_life h3,
+    .who_are_we .project_title,
+    .who_are_we .our_works,
+    .our_services .our_works {
+        font-size: 30px;
+    }
+    .project_title_here .tab_content .tab_margin {
+        margin-right: 20px;
+    }
+    .read_our_minds h4 {
+        font-size: 15px;
+    }
+    .read_our_minds table p,
+    .slow_life p {
+        font-size: 12px;
+    }
+    .read_our_minds p,
+    .our_works p,
+    .header p,
+    .project_title_here p,
+    .who_are_we .project_title_1,
+    .our_services .project_title_1  {
+        font-size: 13px;
+    }
+    .project_title_here {
+        padding-top: 200px;
+        padding-bottom: 360px;
+    }
+    .our_works p,
+    .our_works h2,
+    .read_our_minds h2,
+    .read_our_minds p {
+        padding-top: 60px;
+    }
+    .project_title_here .tabs .img_change img {
+        margin: 0 auto;
+        height: 250px;
+        max-width: 320px;
+    }
+    
+    .project_title_here .tabs .changed_width img {
+        max-width: 120px;
+    }
+    .our_services {
+        padding-top: 50px;
+        padding-bottom: 180px;
+    }
+    .who_are_we {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    .our_services .btn_btn {
+        width: 110px;
+    }
+    .our_services .btn_menu {
+        width: 500px;
+    }
+    .our_services .menu-text {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    
+    .who_are_we  .btn_btn_btn {
+        width: 110px;
+    }
+    .who_are_we  .btn_menu_btn {
+        width: 500px;
+    }
+    .who_are_we  .menu-text {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    .who_are_we  {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    
+}
+@media (max-width:700px) {
+    .header h1,
+    .our_services .project_title,
+    .our_works h2,
+    .project_title_here h2,
+    .read_our_minds h2,
+    .slow_life h3,
+    .who_are_we .project_title,
+    .who_are_we .our_works,
+    .our_services .our_works{
+        font-size: 20px;
+    }
+    .project_title_here .tab_content .tab_margin {
+        margin-right: 0px;
+    }
+    .header .button {
+        margin-bottom: 100px;
+    }
+    .slow_life .list {
+        margin-bottom: 80px;
+    }
+    .slow_life .list .carusel_radosti .changed_ol {
+        bottom: -40px;
+    }
+    .our_services {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .our_services .btn_btn {
+        width: 100px;
+    }
+    .our_services .btn_menu {
+        width: 450px;
+    }
+    .our_services .menu-text {
+        font-size: 8px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    .who_are_we {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .who_are_we .btn_btn_btn {
+        width: 100px;
+    }
+    .who_are_we .btn_menu_btn {
+        width: 450px;
+    }
+    .who_are_we .menu-text {
+        font-size: 8px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    
+}
+@media (max-width:576px) {
+    .row {
+        margin-left: 0px!important;
+    }
+    .header h1,
+    .our_services .project_title,
+    .our_works h2,
+    .project_title_here h2,
+    .read_our_minds h2,
+    .slow_life h3,
+    .who_are_we .project_title,
+    .who_are_we .our_works,
+    .our_services .our_works {
+        font-size: 15px;
+    }
+    .project_title_here .tab_content .tab_margin {
+        margin-right: 0px;
+    }
+    .read_our_minds h4 {
+        font-size: 12px;
+    }
+    .read_our_minds table p,
+    .slow_life p {
+        font-size: 8px;
+    }
+    .read_our_minds p,
+    .our_works p,
+    .header p,
+    .project_title_here p,
+    .who_are_we .project_title_1,
+    .our_services .project_title_1  {
+        font-size: 10px;
+    }
+    .slow_life h3 {
+        padding-top: 10px;
+    }
+    .slow_life p {
+        margin-bottom: 10px;
+    }
+    .let_talk {
+        padding: 5px 0;
+    }
+    .let_talk:hover {
+        padding: 5px 0;
+    }
+    .footer p {
+        padding: 0;
+        font-size: 8px;
+    }
+    .header .project_button {
+        padding: 5px 10px;
+    }
+    .project_title_here .bottom_link {
+        padding: 5px;
+        position: absolute;
+        top: 30px;
+    }
+    .project_title_here .bottom_link:hover {
+        padding: 5px;
+        position: absolute;
+        top: 30px;
+    } 
+    .project_title_here .tabs .img_change img {
+        margin: 0 auto;
+        height: 100px;
+        max-width: 120px;
+    }
+    
+    .project_title_here .tabs .changed_width img {
+        max-width: 50px;
+    }
+    .project_title_here .tabs .tab .label_1 {
+        right: 20px;
+        top: -80px;
+    }
+    .project_title_here .tabs .tab .label_2 {
+        right: 20px;
+        top: -40px;
+    }
+    .project_title_here .tabs .tab .label_3 {
+        right: 20px;
+        top: 0px;
+    }
+    .project_title_here .tabs .project_margin {
+        top: 120px;
+    }
+    .project_title_here .img_change {
+        top: 60px;
+        right: 50px;
+    }
+    .project_title_here .img_1 {
+        left: -50px;
+        top: 5px;
+    }
+    .project_title_here .img_2 {
+        left: 0;
+        top: 5px;
+    }
+    .project_title_here .img_3 {
+        left: 50px;
+        top: 5px;
+    }
+    .project_title_here {
+        padding-top: 200px;
+        padding-bottom: 260px;
+    }
+    .our_services {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .our_services .btn_btn {
+        width: 100px;
+    }
+    .our_services .btn_menu {
+        width: 200px;
+    }
+    .our_services .menu-text {
+        font-size: 8px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    .who_are_we {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .who_are_we .btn_btn_btn {
+        width: 100px;
+    }
+    .who_are_we .btn_menu_btn {
+        width: 190px;
+    }
+    .who_are_we .menu-text {
+        font-size: 8px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+    
+
+}
